@@ -66,32 +66,7 @@ namespace ConsoleApplication1
             return (DiemLT + DiemTH) / 2;
         }
         
-        public void main()
-        {
-            Console.Write("Nhap vao n sinh vien:");
-            int n = Convert.ToInt32(Console.ReadLine());
-            bai2[] a = new bai2[n];
-
-            for (int i = 0; i < n; i++)
-            {
-                Console.WriteLine("Nhap Thong Tin SV THU " + (i + 1));
-                a[i] = new bai2();
-                a[i].NhapTT();
-            }
-            //sap xep DIEM TB
-            Console.WriteLine("\n Sap xep SV theo Diem TB Giam dan:");
-            for (int i = 0; i < n; i++)
-            {
-                Console.WriteLine("\n MaSV: {0} | Ho Ten: {1} |Diem TB: {2}", a[i].MaSV1, a[i].TeNSV1, a[i].DiemLT, a[i].DiemTH);
-            }
-            Console.WriteLine("------------------------------------------------------------");
-            Console.WriteLine("\n 3 SV co diem TB cao nhat :");
-            for (int i = 0; i < 3; i++)
-            {
-                Console.WriteLine("\n MaSV: {0} | Ho Ten: {1} |Diem TB: {2}", a[i].MaSV1, a[i].TeNSV1, a[i].DiemLT, a[i].DiemTH);
-            }
-            Console.ReadKey();
-        }
+       
 
     }
 }
